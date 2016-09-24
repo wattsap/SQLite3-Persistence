@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		F5DDF82A1B31BDC8002BFDEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DDF8291B31BDC8002BFDEB /* AppDelegate.swift */; };
 		F5DDF82C1B31BDC8002BFDEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DDF82B1B31BDC8002BFDEB /* ViewController.swift */; };
-		F5DDF82F1B31BDC8002BFDEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DDF82D1B31BDC8002BFDEB /* Main.storyboard */; };
 		F5DDF8311B31BDC8002BFDEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DDF8301B31BDC8002BFDEB /* Images.xcassets */; };
 		F5DDF8341B31BDC8002BFDEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5DDF8321B31BDC8002BFDEB /* LaunchScreen.xib */; };
 		F5DDF8401B31BDC8002BFDEB /* SQLLite_PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DDF83F1B31BDC8002BFDEB /* SQLLite_PersistenceTests.swift */; };
+		F5DDF84A1B31BE7C002BFDEB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DDF8491B31BE7C002BFDEB /* libsqlite3.dylib */; };
+		F5DDF8501B31C040002BFDEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DDF84F1B31C040002BFDEB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,14 @@
 		F5DDF8281B31BDC8002BFDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5DDF8291B31BDC8002BFDEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5DDF82B1B31BDC8002BFDEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5DDF82E1B31BDC8002BFDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5DDF8301B31BDC8002BFDEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5DDF8331B31BDC8002BFDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F5DDF8391B31BDC8002BFDEB /* SQLLite PersistenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SQLLite PersistenceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DDF83E1B31BDC8002BFDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5DDF83F1B31BDC8002BFDEB /* SQLLite_PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLLite_PersistenceTests.swift; sourceTree = "<group>"; };
+		F5DDF8491B31BE7C002BFDEB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F5DDF84B1B31BEFD002BFDEB /* SQLLite Persistence-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLLite Persistence-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5DDF84F1B31C040002BFDEB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DDF84A1B31BE7C002BFDEB /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 		F5DDF81B1B31BDC8002BFDEB = {
 			isa = PBXGroup;
 			children = (
+				F5DDF8491B31BE7C002BFDEB /* libsqlite3.dylib */,
 				F5DDF8261B31BDC8002BFDEB /* SQLLite Persistence */,
 				F5DDF83C1B31BDC8002BFDEB /* SQLLite PersistenceTests */,
 				F5DDF8251B31BDC8002BFDEB /* Products */,
@@ -79,10 +84,11 @@
 			children = (
 				F5DDF8291B31BDC8002BFDEB /* AppDelegate.swift */,
 				F5DDF82B1B31BDC8002BFDEB /* ViewController.swift */,
-				F5DDF82D1B31BDC8002BFDEB /* Main.storyboard */,
 				F5DDF8301B31BDC8002BFDEB /* Images.xcassets */,
 				F5DDF8321B31BDC8002BFDEB /* LaunchScreen.xib */,
 				F5DDF8271B31BDC8002BFDEB /* Supporting Files */,
+				F5DDF84B1B31BEFD002BFDEB /* SQLLite Persistence-Bridging-Header.h */,
+				F5DDF84F1B31C040002BFDEB /* Main.storyboard */,
 			);
 			path = "SQLLite Persistence";
 			sourceTree = "<group>";
@@ -192,8 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5DDF82F1B31BDC8002BFDEB /* Main.storyboard in Resources */,
 				F5DDF8341B31BDC8002BFDEB /* LaunchScreen.xib in Resources */,
+				F5DDF8501B31C040002BFDEB /* Main.storyboard in Resources */,
 				F5DDF8311B31BDC8002BFDEB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +242,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F5DDF82D1B31BDC8002BFDEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5DDF82E1B31BDC8002BFDEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5DDF8321B31BDC8002BFDEB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,9 +340,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "SQLLite Persistence/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLLite Persistence/SQLLite Persistence-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "SQLLite Persistence/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLLite Persistence/SQLLite Persistence-Bridging-Header.h";
 			};
 			name = Release;
 		};
